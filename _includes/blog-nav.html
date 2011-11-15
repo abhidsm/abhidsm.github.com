@@ -1,0 +1,13 @@
+<div class="blog-nav">
+{% if paginator.previous_page != null %}
+<div class="blog-prev">
+<a href="/page{{ paginator.previous_page }}">Older</a>
+</div>
+{% endif %}
+{% if paginator.next_page != null %}
+<div class="blog-next">
+<a href="/page{{ paginator.next_page }}">Newer</a>
+</div>
+{% endif %}
+<hr />
+</div>
