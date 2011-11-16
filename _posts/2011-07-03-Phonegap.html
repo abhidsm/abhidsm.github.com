@@ -6,4 +6,401 @@ comments: false
 categories: flames game android app phonegapp mobile app
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">Phonegap is a mobile app framework which supports multiple mobile platforms (iOS, Android, Symbian, etc.). We can&nbsp;develop phonegap mobile app using HTML + CSS + JS. Phonegap will convert the app into native application.<br /><br />You can download the latest Phonegap framework from <a href="http://www.phonegap.com/">Phonegap website</a>.<br /><br />I developed a <a href="https://github.com/abhidsm/FlamesGameAndroid">phonegap mobile app</a> for Android, so this post will be related with how I used Phonegap to implement an Android app.<br /><br />You will get the instruction to set up Phonegap for Android application from this <a href="http://www.phonegap.com/start#android">link</a>. This will make you capable of atleast creating&nbsp;a 'Hello world' application for Android using phonegap.<br /><br />So we can use HTML, CSS and JS for developing a phonegap android app. But which JS framework we'll use, Jquery? Then there is an&nbsp;issue - jQuery is developed for the web app, it will be too heavy for a mobile app. So I used a lighweight JS&nbsp;framework called XUI JS framework.<br /><br />There are many other JS frameworks for mobile apps. Take a look at those&nbsp;<a href="http://www.phonegap.com/tools">JS Frameworks</a> which Phonegap supports.<br /><br />Phonegap gives access to use many mobile features like vibrator, accelero meter, contacts, etc. Phonegap have a good <a href="http://docs.phonegap.com/">API</a> for&nbsp;those featutres. I implemented two features from this API:<br /><br /><ol style="text-align: left;"><li>Vibrator:</li><ul><li><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace; line-height: 16px; white-space: pre;"><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">navigator</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">notification</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">vibrate</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">(</span><span class="mi" style="color: #009999; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">100</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">);</span></span></li><li>&nbsp;This will provide a vibration of 100 milli seconds.</li></ul><li>Notification:</li><ul><li><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace; line-height: 16px; white-space: pre;"><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">navigator</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">notification</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">activityStart</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">();</span></span></li><li>This will show a dialog box with the 'Please wait' message.</li><li><span class="Apple-style-span" style="font-family: 'Courier New', Courier, monospace; line-height: 16px; white-space: pre;"><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">navigator</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">notification</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">.</span><span class="nx" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">activityStop</span><span class="p" style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px;">();</span> </span></li><li><span class="Apple-style-span" style="line-height: 16px; white-space: pre;">This will hide the dialog box.</span></li></ul></ol><div><span class="Apple-style-span" style="line-height: 16px; white-space: pre;">You can download and test the application I created&nbsp;</span><span class="Apple-style-span" style="line-height: 16px; white-space: pre;">(FlamesGame for Android) </span><span class="Apple-style-span" style="line-height: 16px; white-space: pre;">from <a href="http://flamesgame.appspot.com/">here</a>.</span></div><div><span class="Apple-style-span" style="line-height: 16px; white-space: pre;"><br /></span></div></div><div class="blogger-post-footer"><img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/9083125189194739371-6479323314651659327?l=abhidsm.blogspot.com' alt='' /></div>
+<div dir="ltr" style="text-align: left;" trbidi="on">Phonegap is a
+  mobile app framework which supports multiple mobile platforms (iOS,
+  Android, Symbian, etc.). We can&nbsp;develop phonegap mobile app
+  using HTML + CSS + JS. Phonegap will convert the app into native
+  application.<br /><br />You can download the latest Phonegap
+  framework from <a href="http://www.phonegap.com/">Phonegap
+    website</a>.<br /><br />I developed
+  a <a href="https://github.com/abhidsm/FlamesGameAndroid">phonegap
+    mobile app</a> for Android, so this post will be related with how
+  I used Phonegap to implement an Android app.<br /><br />You will get
+  the instruction to set up Phonegap for Android application from
+  this <a href="http://www.phonegap.com/start#android">link</a>. This
+  will make you capable of atleast creating&nbsp;a 'Hello world'
+  application for Android using phonegap.<br /><br />So we can use
+  HTML, CSS and JS for developing a phonegap android app. But which JS
+  framework we'll use, Jquery? Then there is an&nbsp;issue - jQuery is
+  developed for the web app, it will be too heavy for a mobile app. So
+  I used a lighweight JS&nbsp;framework called XUI JS
+  framework.<br /><br />There are many other JS frameworks for mobile
+  apps. Take a look at
+  those&nbsp;<a href="http://www.phonegap.com/tools">JS Frameworks</a>
+  which Phonegap supports.<br /><br />Phonegap gives access to use
+  many mobile features like vibrator, accelero meter, contacts,
+  etc. Phonegap have a
+  good <a href="http://docs.phonegap.com/">API</a> for&nbsp;those
+  featutres. I implemented two features from this
+  API:<br /><br /><ol style="text-align:
+                             left;"><li>Vibrator:</li><ul><li><span class="Apple-style-span"
+                                                                    style="font-family:
+                                                                           'Courier
+                                                                           New',
+                                                                           Courier,
+                                                                           monospace;
+                                                                           line-height:
+                                                                           16px;
+                                                                           white-space:
+                                                                           pre;"><span class="nx"
+                                                                                       style="margin-bottom:
+                                                                                              0px;
+                                                                                              margin-left:
+                                                                                              0px;
+                                                                                              margin-right:
+                                                                                              0px;
+                                                                                              margin-top:
+                                                                                              0px;
+                                                                                              padding-bottom:
+                                                                                              0px;
+                                                                                              padding-left:
+                                                                                              0px;
+                                                                                              padding-right:
+                                                                                              0px;
+                                                                                              padding-top:
+                                                                                              0px;">navigator</span><span class="p"
+                                                                                                                          style="margin-bottom:
+                                                                                                                                 0px;
+                                                                                                                                 margin-left:
+                                                                                                                                 0px;
+                                                                                                                                 margin-right:
+                                                                                                                                 0px;
+                                                                                                                                 margin-top:
+                                                                                                                                 0px;
+                                                                                                                                 padding-bottom:
+                                                                                                                                 0px;
+                                                                                                                                 padding-left:
+                                                                                                                                 0px;
+                                                                                                                                 padding-right:
+                                                                                                                                 0px;
+                                                                                                                                 padding-top:
+                                                                                                                                 0px;">.</span><span class="nx"
+                                                                                                                                                     style="margin-bottom:
+                                                                                                                                                            0px;
+                                                                                                                                                            margin-left:
+                                                                                                                                                            0px;
+                                                                                                                                                            margin-right:
+                                                                                                                                                            0px;
+                                                                                                                                                            margin-top:
+                                                                                                                                                            0px;
+                                                                                                                                                            padding-bottom:
+                                                                                                                                                            0px;
+                                                                                                                                                            padding-left:
+                                                                                                                                                            0px;
+                                                                                                                                                            padding-right:
+                                                                                                                                                            0px;
+                                                                                                                                                            padding-top:
+                                                                                                                                                            0px;">notification</span><span class="p"
+                                                                                                                                                                                           style="margin-bottom:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  margin-left:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  margin-right:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  margin-top:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  padding-bottom:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  padding-left:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  padding-right:
+                                                                                                                                                                                                  0px;
+                                                                                                                                                                                                  padding-top:
+                                                                                                                                                                                                  0px;">.</span><span class="nx"
+                                                                                                                                                                                                                      style="margin-bottom:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             margin-left:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             margin-right:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             margin-top:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             padding-bottom:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             padding-left:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             padding-right:
+                                                                                                                                                                                                                             0px;
+                                                                                                                                                                                                                             padding-top:
+                                                                                                                                                                                                                             0px;">vibrate</span><span class="p"
+                                                                                                                                                                                                                                                       style="margin-bottom:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-left:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-right:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-top:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-bottom:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-left:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-right:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-top:
+                                                                                                                                                                                                                                                              0px;">(</span><span class="mi"
+                                                                                                                                                                                                                                                                                  style="color:
+                                                                                                                                                                                                                                                                                         #009999;
+                                                                                                                                                                                                                                                                                         margin-bottom:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         margin-left:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         margin-right:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         margin-top:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         padding-bottom:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         padding-left:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         padding-right:
+                                                                                                                                                                                                                                                                                         0px;
+                                                                                                                                                                                                                                                                                         padding-top:
+                                                                                                                                                                                                                                                                                         0px;">100</span><span class="p"
+                                                                                                                                                                                                                                                                                                               style="margin-bottom:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      margin-left:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      margin-right:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      margin-top:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      padding-bottom:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      padding-left:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      padding-right:
+                                                                                                                                                                                                                                                                                                                      0px;
+                                                                                                                                                                                                                                                                                                                      padding-top:
+                                                                                                                                                                                                                                                                                                                      0px;">);</span></span></li><li>&nbsp;This
+        will provide a vibration of 100 milli
+        seconds.</li></ul><li>Notification:</li><ul><li><span class="Apple-style-span"
+                                                              style="font-family:
+                                                                     'Courier
+                                                                     New',
+                                                                     Courier,
+                                                                     monospace;
+                                                                     line-height:
+                                                                     16px;
+                                                                     white-space:
+                                                                     pre;"><span class="nx"
+                                                                                 style="margin-bottom:
+                                                                                        0px;
+                                                                                        margin-left:
+                                                                                        0px;
+                                                                                        margin-right:
+                                                                                        0px;
+                                                                                        margin-top:
+                                                                                        0px;
+                                                                                        padding-bottom:
+                                                                                        0px;
+                                                                                        padding-left:
+                                                                                        0px;
+                                                                                        padding-right:
+                                                                                        0px;
+                                                                                        padding-top:
+                                                                                        0px;">navigator</span><span class="p"
+                                                                                                                    style="margin-bottom:
+                                                                                                                           0px;
+                                                                                                                           margin-left:
+                                                                                                                           0px;
+                                                                                                                           margin-right:
+                                                                                                                           0px;
+                                                                                                                           margin-top:
+                                                                                                                           0px;
+                                                                                                                           padding-bottom:
+                                                                                                                           0px;
+                                                                                                                           padding-left:
+                                                                                                                           0px;
+                                                                                                                           padding-right:
+                                                                                                                           0px;
+                                                                                                                           padding-top:
+                                                                                                                           0px;">.</span><span class="nx"
+                                                                                                                                               style="margin-bottom:
+                                                                                                                                                      0px;
+                                                                                                                                                      margin-left:
+                                                                                                                                                      0px;
+                                                                                                                                                      margin-right:
+                                                                                                                                                      0px;
+                                                                                                                                                      margin-top:
+                                                                                                                                                      0px;
+                                                                                                                                                      padding-bottom:
+                                                                                                                                                      0px;
+                                                                                                                                                      padding-left:
+                                                                                                                                                      0px;
+                                                                                                                                                      padding-right:
+                                                                                                                                                      0px;
+                                                                                                                                                      padding-top:
+                                                                                                                                                      0px;">notification</span><span class="p"
+                                                                                                                                                                                     style="margin-bottom:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            margin-left:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            margin-right:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            margin-top:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            padding-bottom:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            padding-left:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            padding-right:
+                                                                                                                                                                                            0px;
+                                                                                                                                                                                            padding-top:
+                                                                                                                                                                                            0px;">.</span><span class="nx"
+                                                                                                                                                                                                                style="margin-bottom:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       margin-left:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       margin-right:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       margin-top:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       padding-bottom:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       padding-left:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       padding-right:
+                                                                                                                                                                                                                       0px;
+                                                                                                                                                                                                                       padding-top:
+                                                                                                                                                                                                                       0px;">activityStart</span><span class="p"
+                                                                                                                                                                                                                                                       style="margin-bottom:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-left:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-right:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              margin-top:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-bottom:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-left:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-right:
+                                                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                                                              padding-top:
+                                                                                                                                                                                                                                                              0px;">();</span></span></li><li>This
+        will show a dialog box with the 'Please wait'
+        message.</li><li><span class="Apple-style-span"
+                               style="font-family: 'Courier New',
+                                      Courier, monospace; line-height:
+                                      16px; white-space:
+                                      pre;"><span class="nx"
+                                                  style="margin-bottom:
+                                                         0px;
+                                                         margin-left:
+                                                         0px;
+                                                         margin-right:
+                                                         0px;
+                                                         margin-top:
+                                                         0px;
+                                                         padding-bottom:
+                                                         0px;
+                                                         padding-left:
+                                                         0px;
+                                                         padding-right:
+                                                         0px;
+                                                         padding-top:
+                                                         0px;">navigator</span><span class="p"
+                                                                                     style="margin-bottom:
+                                                                                            0px;
+                                                                                            margin-left:
+                                                                                            0px;
+                                                                                            margin-right:
+                                                                                            0px;
+                                                                                            margin-top:
+                                                                                            0px;
+                                                                                            padding-bottom:
+                                                                                            0px;
+                                                                                            padding-left:
+                                                                                            0px;
+                                                                                            padding-right:
+                                                                                            0px;
+                                                                                            padding-top:
+                                                                                            0px;">.</span><span class="nx"
+                                                                                                                style="margin-bottom:
+                                                                                                                       0px;
+                                                                                                                       margin-left:
+                                                                                                                       0px;
+                                                                                                                       margin-right:
+                                                                                                                       0px;
+                                                                                                                       margin-top:
+                                                                                                                       0px;
+                                                                                                                       padding-bottom:
+                                                                                                                       0px;
+                                                                                                                       padding-left:
+                                                                                                                       0px;
+                                                                                                                       padding-right:
+                                                                                                                       0px;
+                                                                                                                       padding-top:
+                                                                                                                       0px;">notification</span><span class="p"
+                                                                                                                                                      style="margin-bottom:
+                                                                                                                                                             0px;
+                                                                                                                                                             margin-left:
+                                                                                                                                                             0px;
+                                                                                                                                                             margin-right:
+                                                                                                                                                             0px;
+                                                                                                                                                             margin-top:
+                                                                                                                                                             0px;
+                                                                                                                                                             padding-bottom:
+                                                                                                                                                             0px;
+                                                                                                                                                             padding-left:
+                                                                                                                                                             0px;
+                                                                                                                                                             padding-right:
+                                                                                                                                                             0px;
+                                                                                                                                                             padding-top:
+                                                                                                                                                             0px;">.</span><span class="nx"
+                                                                                                                                                                                 style="margin-bottom:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        margin-left:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        margin-right:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        margin-top:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        padding-bottom:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        padding-left:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        padding-right:
+                                                                                                                                                                                        0px;
+                                                                                                                                                                                        padding-top:
+                                                                                                                                                                                        0px;">activityStop</span><span class="p"
+                                                                                                                                                                                                                       style="margin-bottom:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              margin-left:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              margin-right:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              margin-top:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              padding-bottom:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              padding-left:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              padding-right:
+                                                                                                                                                                                                                              0px;
+                                                                                                                                                                                                                              padding-top:
+                                                                                                                                                                                                                              0px;">();</span> </span></li><li><span class="Apple-style-span"
+                                                                                                                                                                                                                                                                     style="line-height:
+                                                                                                                                                                                                                                                                            16px;
+                                                                                                                                                                                                                                                                            white-space:
+                                                                                                                                                                                                                                                                            pre;">This
+          will hide the dialog
+          box.</span></li></ul></ol><div><span class="Apple-style-span"
+                                               style="line-height:
+                                                      16px;
+                                                      white-space:
+                                                      pre;">You can
+      download and test the application I
+      created&nbsp;</span><span class="Apple-style-span"
+                                style="line-height: 16px; white-space:
+                                       pre;">(FlamesGame for
+      Android) </span><span class="Apple-style-span"
+                            style="line-height: 16px; white-space:
+                                   pre;">from <a href="http://flamesgame.appspot.com/">here</a>.</span></div><div><span class="Apple-style-span"
+                                                                                                                        style="line-height:
+                                                                                                                               16px;
+                                                                                                                               white-space:
+                                                                                                                               pre;"><br /></span></div></div>
+

@@ -4,4 +4,8 @@
 {{ post.content }}
 {% endif %}
 
+{% if site.env != "dev" %}
+{% include disqus.html %}
+{% endif %}
+
 

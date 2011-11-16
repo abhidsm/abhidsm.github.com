@@ -1,0 +1,11 @@
+div.blog-next {
+   float: right;
+}
+
+div.blog-nav hr {
+   visibility: hidden;
+}
+
+article header{
+   margin-top: 50px;
+}
