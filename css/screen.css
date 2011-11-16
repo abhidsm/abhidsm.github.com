@@ -36,15 +36,15 @@ p {
 }
 
 a {
-  color: #00a;
+  color: #3D85C6;
 }
 
 a:hover {
-  color: black;
+  color: #1B3B66;
 }
 
 a:visited {
-  color: #a0a;
+  color: #1B3B66;
 }
 
 table {
@@ -94,8 +94,9 @@ ul.posts {
 }
 
   .site .title a {
-    color: #a00;
-    text-decoration: none;
+     color: #1B3B66;
+     text-decoration: none;
+     font-size: 2em;
   }
 
   .site .title a:hover {
