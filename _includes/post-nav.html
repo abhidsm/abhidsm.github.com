@@ -1,0 +1,13 @@
+<div class="post-nav">
+  {% if post.next.url != null %}
+  <div class="post-newer">
+    <a href="{{ post.next.url }}">Newer</a>
+  </div>
+  {% endif %}
+  {% if post.previous.url != null %}
+  <div class="post-older">
+    <a href="{{ post.previous.url }}">Older</a>
+  </div>
+  {% endif %}
+  <hr />
+</div>

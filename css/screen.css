@@ -27,8 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-   margin-bottom: 1em;
-   margin-top: 1em;
+   margin-bottom: 0.5em;
+   margin-top: 0.5em;
 }
 
 p {
@@ -82,13 +82,13 @@ ul.posts {
 .site {
   font-size: 1.4em;
   text-align: justify;
-  width: 80%;
-  margin: 3em auto 2em auto;
+  width: 90%;
+  margin: 0em auto 2em auto;
   line-height: 1.5em;
 }
 
 .title {
-  color: #a00;
+  color: #1B3B66;
   font-weight: bold;
   margin-bottom: 2em;
 }

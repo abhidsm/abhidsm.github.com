@@ -1,11 +1,33 @@
-div.blog-next {
+div.blog-prev, div.post-newer {
    float: right;
 }
 
-div.blog-nav hr {
+div.blog-nav hr, div.post-nav hr {
    visibility: hidden;
 }
 
-article header{
-   margin-top: 50px;
+article header, header{
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+
+div.left-section{
+   width: 70%;
+   float:left;
+}
+
+div.right-section{
+   width: 25%;
+   padding-left: 1%;
+   padding-top: 10px;
+   position: fixed;
+   left: 70%;
+}
+
+li {
+   margin-left: 30px;
+}
+
+.margin-top-10{
+   margin-top: 10px;
 }

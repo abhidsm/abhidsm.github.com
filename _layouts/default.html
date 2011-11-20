@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>{{ page.title }}</title>
-   <meta name="author" content="Abhilash M A" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner"
-   rel="alternate" title="Abhilash M A" type="application/atom+xml" />
-
-   <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-
-   <link rel="stylesheet" href="/css/style.css" type="text/css" />
-
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Abhilash M A" />
+  <link href="http://feeds.feedburner.com/tom-preston-werner"
+      rel="alternate" title="Abhilash M A" type="application/atom+xml" />
+  
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+  
+  <!-- Homepage CSS -->
+  <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+   <!--[if lte IE 8]>
+   <script type="text/javascript">
+     // Create elements here allows IE8 to style them when it sees the real thing.
+     document.createElement('article');
+     document.createElement('aside');
+     document.createElement('footer');
+     document.createElement('header');
+     document.createElement('hgroup');
+     document.createElement('menu');
+     document.createElement('nav');
+     document.createElement('section');
+   </script>
+   <![endif]-->
 </head>
 <body>
 
 <div class="site">
-  <div class="title">
-    <a href="/">Abhi's Experiments</a>
-  </div>
-  
-  {{ content }}
-  
-  <div class="footer">
-    <div class="contact">
-      <p>
-        Abhilash M A<br />
-        abhidsm@gmail.com
-      </p>
+  <div class="posts left-section">
+    <div class="title">
+      <a href="/"><h1>Abhi's Experiments<h1></a>
+      <h4>Its a place to write my professional experience and experiments </h4>
     </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/abhidsm/">github.com/abhidsm</a><br />
+    
+    {{ content }}
+    
+    <div class="footer">
+      <div class="contact">
+        <p>
+          Abhilash M A<br />
+        abhidsm@gmail.com
+        </p>
+      </div>
+      <div class="contact">
+        <p>
+          <a href="http://github.com/abhidsm/">github.com/abhidsm</a><br />
         <a href="http://twitter.com/abhidsm/">twitter.com/abhidsm</a><br />
-      </p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="right-section">
+    <div class="home margin-top-10"><a href="/">Home</a></div>
+    <div class="archive margin-top-10"><a href="#">Archive</a></div>
+    <div class="stackoverflow-badge margin-top-10">
+      <a href="http://stackoverflow.com/users/567101/abhidsm">
+        <img src="http://stackoverflow.com/users/flair/567101.png" width="208" height="58" alt="profile for abhidsm at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for abhidsm at Stack Overflow, Q&amp;A for professional and enthusiast programmers" />
+      </a>
+    </div>
+    <a href="http://about.me/abhidsm">Check out my about.me
+    profile!</a>
+    <div class="one-more-blog margin-top-10"> 
+      <ul>I have one more blog
+        <li><a target="_new" href="http://abhionrails.blogspot.com">Abhi on Rails</a></li>
+      </ul>
+    </div>
+    <div class="spare-time-apps margin-top-10"> 
+      <ul>My Spare-Time Apps
+        <li><a target="_new" href="http://flamesgame.appspot.com">Flames Game</a></li>
+        <li><a target="_new" href="http://justchat.nodester.com">Just Chat</a></li>
+      </ul>
+    </div>
+    <div class="friends margin-top-10"> 
+      <ul>Blogs of my Friends
+        <li><a target="_new" href="http://foobarnbaz.com/">Sreejith K</a></li>
+        <li><a target="_new" href="http://manuknkra.wordpress.com/">Manu K Mohan</a></li>
+      </ul>
+    </div>
+    <div class="following margin-top-10"> 
+      <ul>I am following the following:
+        <li><a target="_new" href="http://news.ycombinator.com/">Hacker News</a></li>
+        <li><a target="_new" href="http://techcrunch.com/">Tech Crunch</a></li>
+        <li><a target="_new" href="http://www.techmeme.com/">Tech Meme</a></li>
+      </ul>
     </div>
   </div>
 </div>
