@@ -35,3 +35,29 @@ li {
 div.share-this {
    padding: 20px 0px;
 }
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+article header h1 {
+   font-size: 1.2em;
+}
+
+article header time {
+   float: right;
+   color: #3D85C6;
+}
+
+h1.archive-header {
+   text-align: center;
+   font-size: 1.5em;
+}
+
+div.separator{
+   text-align: center;
+}

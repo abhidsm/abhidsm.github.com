@@ -1,0 +1,18 @@
+---
+layout: default
+title: Abhi's Experiments
+---
+<h1 class="archive-header">ARCHIVE</h1>
+{% for post in site.posts %}
+<article class="excerpt">
+<header>
+<time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate="pubdate" class="post-date">
+{{ post.date | date: "%b %d, %Y" }}
+</time>
+<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+</header>
+
+</article>
+{% endfor %}
+
+
