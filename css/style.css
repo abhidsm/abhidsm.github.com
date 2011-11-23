@@ -18,10 +18,12 @@ div.left-section{
 
 div.right-section{
    width: 25%;
-   padding-left: 1%;
+   padding-left: 5%;
    padding-top: 10px;
    position: fixed;
    left: 70%;
+   overflow-y: auto;
+   height: 90%;
 }
 
 li {
@@ -60,4 +62,9 @@ h1.archive-header {
 
 div.separator{
    text-align: center;
+}
+
+div.copy-right{
+   clear: both;
+   padding-bottom: 10px;
 }

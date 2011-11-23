@@ -1,12 +1,12 @@
 <div class="post-nav">
   {% if post.next.url != null %}
   <div class="post-newer">
-    <a href="{{ post.next.url }}">Newer</a>
+    <a href="{{ post.next.url }}">{{post.next.title | truncate:30}}&gt;&gt;</a>
   </div>
   {% endif %}
   {% if post.previous.url != null %}
   <div class="post-older">
-    <a href="{{ post.previous.url }}">Older</a>
+    <a href="{{ post.previous.url }}">&lt;&lt;{{post.previous.title | truncate:30}}</a>
   </div>
   {% endif %}
   <hr />
