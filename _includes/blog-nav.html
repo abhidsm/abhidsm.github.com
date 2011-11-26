@@ -2,15 +2,15 @@
   {% if paginator.previous_page != null  %}
   <div class="blog-prev">
     {% if paginator.previous_page == 1 %}
-    <a href="/">Newer>></a>
+    <a class="small" href="/">Newer &gt;&gt;</a>
     {% else %}
-    <a href="/page{{paginator.previous_page}}">Newer&gt;&gt;</a>
+    <a class="small" href="/page{{paginator.previous_page}}">Newer &gt;&gt;</a>
     {% endif %}
   </div>
   {% endif %}
   {% if paginator.next_page != null %}
   <div class="blog-next">
-    <a href="/page{{ paginator.next_page }}">&lt;&lt;Older</a>
+    <a class="small" href="/page{{ paginator.next_page }}">&lt;&lt; Older</a>
   </div>
   {% endif %}
   <hr />
