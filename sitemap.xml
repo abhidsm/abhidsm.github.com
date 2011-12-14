@@ -16,9 +16,5 @@
     <loc>http://{{ site.host }}{{ post.url | remove:'.html' }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
   </url>
-  {% endfor %}{% for category in site.categories %}<url>
-    <loc>http://{{ site.host }}/{{ category[0] }}</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  </url>
   {% endfor %}
 </urlset>
