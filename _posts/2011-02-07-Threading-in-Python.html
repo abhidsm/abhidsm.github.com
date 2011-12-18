@@ -6,4 +6,44 @@ comments: false
 categories: Threading background process Thread Python
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">Recently I implemented threading in my <a href="http://flamesgame.appspot.com/">flamesgame</a> app. The steps I took to implement threading are:<br /><br />First I import the threading library:<br /><br /><span class="Apple-style-span" style="color: #b45f06;">import threading</span><br /><br />Then I created a class for the thread:<br /><br /><span class="Apple-style-span" style="color: #b45f06;">class PostToFacebook(threading.Thread):</span><br /><span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp; &nbsp; def __init__(self, message):</span><br /><span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.message = message</span><br /><span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;threading.Thread.__init__(self)</span><br /><span class="Apple-style-span" style="color: #b45f06;"><br /></span><br /><span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp; &nbsp; def run(self):</span><br /><span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;facebook.post(token, self.message)</span><br /><br />Here PostToFacebook is the class which I used for the Threading. And the code to create the thread is:<br /><br /><span class="Apple-style-span" style="color: #b45f06;">PostToFacebook("message to facebook").start()</span><br /><br />This will invoke the __init__() method, where it set the message value and invoke the run() method which post message to the facebook.<br />&nbsp;&nbsp;</div>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+  Recently I implemented threading in
+  my <a href="http://flamesgame.appspot.com/">flamesgame</a> app. The
+  steps I took to implement threading are:
+  <br /><br />
+  First I import the threading library:
+  <br /><br />
+  <span class="Apple-style-span" style="color: #b45f06;">import
+    threading</span>
+  <br /><br />
+  Then I created a class for the thread:
+  <br /><br />
+  <span class="Apple-style-span" style="color: #b45f06;">class
+    PostToFacebook(threading.Thread):</span>
+  <br />
+  <span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp;
+    &nbsp; def __init__(self, message):</span>
+  <br />
+  <span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp;self.message = message</span>
+  <br />
+  <span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp;threading.Thread.__init__(self)</span>
+  <br /><br />
+  <span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp;
+    &nbsp; def run(self):</span>
+  <br />
+  <span class="Apple-style-span" style="color: #b45f06;">&nbsp;&nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp;facebook.post(token,
+    self.message)</span>
+  <br /><br />
+  Here PostToFacebook is the class which I used for the Threading. And
+    the code to create the thread is:
+  <br /><br />
+  <span class="Apple-style-span" style="color:
+                                        #b45f06;">PostToFacebook("message
+    to facebook").start()</span>
+  <br /><br />
+  This will invoke the __init__() method, where it set the message value and invoke the run() method which post message to the facebook.
+  <br /><br />
+</div>
