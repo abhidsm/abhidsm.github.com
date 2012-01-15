@@ -34,16 +34,16 @@ issues I faced and the steps I taken to fix the issues.
 2. #The commands to build, load simulator and load device
 
       In phonegap doc the commands to build the blackberry phonegap app from
-      console is given as 'ant build'. But this won't work. Because for
-      phonegap 1.3.0 it is 'ant blackberry build'. Similarly for load the
-      app in simulator 'ant blackberry load-simulator' and load app in
-      device 'ant blackberry load-device'.
+      console is given as ***'ant build'***. But this won't work. Because for
+      phonegap 1.3.0 it is ***'ant blackberry build'***. Similarly for load the
+      app in simulator ***'ant blackberry load-simulator'*** and load app in
+      device ***'ant blackberry load-device'***.
 
 3. #Code signing
 
       To load the app in device you have to sign the code using the key
       provided by Blackberry. You can order the keys from [this link](https://www.blackberry.com/SignedKeys/). It will take around 2
-      hours to process the request and get the keys. Now you have to [install/register the keys](https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_smartphone_apps_1920010_11.html) using your webworks sdk. After installing the signing keys you can run 'ant blackberry load-device'
+      hours to process the request and get the keys. Now you have to [install/register the keys](https://bdsc.webapps.blackberry.com/html5/documentation/ww_publishing/signing_setup_smartphone_apps_1920010_11.html) using your webworks sdk. After installing the signing keys you can run ***'ant blackberry load-device'***
       to install the app in the device.
 
 4. #Testing app in the device
