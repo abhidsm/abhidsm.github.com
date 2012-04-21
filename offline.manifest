@@ -18,7 +18,6 @@ images/rss.png
 {{ post.url }}
 {% endfor %}
 
-/archive
 
 FALLBACK:
-/ /index.html
+/archive index.html
