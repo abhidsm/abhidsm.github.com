@@ -14,8 +14,8 @@ favicon.ico
 images/blog-post-separator.png
 images/rss.png
 
-/archive
 {% for post in site.posts %}   
 {{ post.url }}
 {% endfor %}
+/archive
 
