@@ -17,5 +17,10 @@ images/rss.png
 {% for post in site.posts %}   
 {{ post.url }}
 {% endfor %}
-/archive
 
+{% for i in (4..site.posts.size) %}   
+/page{{ i | divided_by:site.paginate }}
+{% endfor %}
+
+FALLBACK:
+/ /index.html
