@@ -18,9 +18,7 @@ images/rss.png
 {{ post.url }}
 {% endfor %}
 
-{% for i in (4..site.posts.size) %}   
-/page{{ i | divided_by:site.paginate }}
-{% endfor %}
+/archive
 
 FALLBACK:
 / /index.html
