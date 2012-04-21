@@ -1,0 +1,21 @@
+---
+layout: nil
+---
+
+CACHE MANIFEST
+#This is a comment
+
+CACHE:
+index.html
+archive
+css/style.css
+css/screen.css
+css/syntax.css
+favicon.ico
+images/blog-post-separator.png
+images/rss.png
+
+{% for post in site.posts %}   
+{{ post.url }}
+{% endfor %}
+
