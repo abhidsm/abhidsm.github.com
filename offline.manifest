@@ -18,6 +18,8 @@ images/rss.png
 {{ post.url }}
 {% endfor %}
 
-
 FALLBACK:
 / index.html
+
+NETWORK:
+*
