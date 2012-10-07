@@ -41,3 +41,9 @@ device specific properties.
 
 You can check the source code of this application from my [GitHub repo](https://github.com/abhidsm/who-is-next).
 
+### Update
+
+I have implemented the BroadcastReceiver and storing the contact
+details to a file as part of the latest version(1.1). Now the app is
+independent of any phone specific features, so the latest version will work in any
+Android mobiles :)
