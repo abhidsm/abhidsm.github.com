@@ -5,7 +5,8 @@ categories: hacknight multunus fun develop product
 description: We had a hacknight at multunus. It was very fun and enjoyed a lot creating a small application
 ---
 
-We had a very successful hacknight here at [multunus](http://www.multunus.com) yesterday(Jan 25, 2012). This was
+We had a very successful hacknight here at
+[multunus](http://www.multunus.com) yesterday (Jan 25, 2013). This was
 our 5th or 6th hacknight. And why it is very successful because we
 could complete all the 3 applications which we planned to do. Last
 time our team couldn't finish the app completely.
@@ -18,9 +19,10 @@ with 2 members. The ideas were:
 3. Scrollee - an app which scrolls the content across the screens
 (Multiple monitors) \[Midhun, Ernest\]
 
-So I form a pair with Sandeep to work on the BroadcastIt app. We cameup
+So I form a pair with Sandeep to work on the
+[BroadcastIt](https://github.com/multunus/BroadcastIt) app. We came up
 with the tasks and spikes. We have selected node.js to implement the
-server part. We worked on the spikes and we were confident that it can be done. By 1:30 AM we are done with the basic
+server part. We worked on the spikes and we were confident that it can be done. By 1:30 AM we have done with the basic
 app. That is the server part and client using the normal page. So we
 were able to show the demo of broadcasting URL to others. The next
 task was to integrate the client with the extension.
@@ -57,5 +59,5 @@ Am and we had to create a final video of the demo.
 
 So it was a very nice experience having successfully completing an app
 that we started with the idea, implementation and finally showing the
-demo. It was very fun too, we didn't feel asleep at all. Once I get
-the demo videos link, I will add it here :)
+demo. It was very fun too, we didn't feel asleep at all. <del>Once I get
+the demo videos link, I will add it here :)</del> Here is the [demo videos](http://www.youtube.com/watch?v=_JZPs4O3lbA&list=PLzwGsAhPUVNJDDeUxfKaG5TH6Y8UsibuH) :)
