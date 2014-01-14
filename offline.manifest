@@ -3,16 +3,23 @@ layout: nil
 ---
 
 CACHE MANIFEST
-# rev 10
+# rev 11
 
 CACHE:
 index.html
+about.html
+archive.html
 css/style.css
 css/screen.css
 css/syntax.css
 favicon.ico
 images/blog-post-separator.png
 images/rss.png
+images/github.png
+images/twitter.png
+images/linkedin.png
+images/facebook.png
+images/about.png
 
 {% for post in site.posts %}   
 {{ post.url }}
