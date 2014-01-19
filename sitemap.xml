@@ -12,6 +12,10 @@
     <loc>http://{{ site.host }}/archive</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
+  <url>
+    <loc>http://{{ site.host }}/about</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
   {% for post in site.posts %}<url>
     <loc>http://{{ site.host }}{{ post.url | remove:'.html' }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
