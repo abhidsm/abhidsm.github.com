@@ -3,12 +3,12 @@ layout: nil
 ---
 
 CACHE MANIFEST
-# rev 12
+# rev 13
 
 CACHE:
 index.html
-about.html
-archive.html
+about
+archive
 css/style.css
 css/screen.css
 css/syntax.css
