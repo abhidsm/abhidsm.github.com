@@ -6,6 +6,7 @@ description: Its a place to write about my professional experience and experimen
 
 {% for post in paginator.posts %}
 <article class="excerpt">
+{% include google_ads.html %}
 <header>
 <time datetime="{{ post.date | date: "%Y-%m-%d" }}" pubdate="pubdate" class="post-date">
 {{ post.date | date: "%b %d, %Y" }}
