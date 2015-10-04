@@ -89,3 +89,7 @@ div.title-desc {
 .social-networks span {
     padding: 2%;
 }
+
+pre {
+    overflow-x: auto;
+}
