@@ -4,4 +4,4 @@ plugins: [jekyll-paginate]
 paginate: 3
 permalink: pretty
 highlighter: true
-#host: abhidsm.com
+host: abhidsm.com
