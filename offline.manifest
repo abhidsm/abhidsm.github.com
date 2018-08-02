@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 
 CACHE MANIFEST
@@ -21,7 +21,7 @@ images/linkedin.png
 images/facebook.png
 images/about.png
 
-{% for post in site.posts %}   
+{% for post in site.posts %}
 {{ post.url }}
 {% endfor %}
 

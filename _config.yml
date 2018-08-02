@@ -1,6 +1,7 @@
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 growl: true
+plugins: [jekyll-paginate]
 paginate: 3
 permalink: pretty
-pygments: true
-host: abhidsm.com
+highlighter: true
+#host: abhidsm.com
