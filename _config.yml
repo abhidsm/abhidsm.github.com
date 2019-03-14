@@ -4,4 +4,5 @@ plugins: ['jekyll-paginate']
 paginate: 3
 permalink: pretty
 highlighter: rouge
+future: true
 host: abhidsm.com

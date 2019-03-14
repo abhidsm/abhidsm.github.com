@@ -76,10 +76,9 @@ a.small {
    font-size: .8em;
 }
 
-div.title-desc {
-   color: #666;
-   font-weight: normal;
-   font-style: italic;
+div.title {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .block {
