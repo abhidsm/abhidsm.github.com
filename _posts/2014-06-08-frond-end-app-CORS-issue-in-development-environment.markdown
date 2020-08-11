@@ -2,6 +2,7 @@
 layout: post
 title: Front End App CORS issue in development environment 
 categories: Front End App CORS issue in development environment 
+tags: Front End App CORS issue in development environment 
 description: When we develop a Front End App which need access to the web services will face the Cross Origin Resource Sharing issue. This post is about how to solve this issue.
 ---
 
@@ -10,7 +11,7 @@ application using Backbone.js, Angular.js or any other MV* frameworks,
 you might have faced the issue with CORS. You will face this issue if
 you are accessing the hosted web services (API) from your development
 environment because the domains are different.
-
+<!--more-->
 We can solve the CORS issue in different ways. First method is
 [JSONP](http://en.wikipedia.org/wiki/JSONP). To implement JSONP you
 need the access to modify the web services. Because to implement the

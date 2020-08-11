@@ -2,11 +2,12 @@
 layout: post
 title: AWS CodeBuild Custom Notification Messages
 categories: AWS CodeBuild Custom Notification Messages using SNS and Lambda with Python Botocore SDK Customize AWS CloudWatch notifications.    
+tags: AWS CodeBuild Custom Notification Messages using SNS and Lambda with Python Botocore SDK Customize AWS CloudWatch notifications.    
 description: AWS CodeBuild Custom Notification Messages using SNS and Lambda with Python Botocore SDK. Customize AWS CloudWatch notifications.  
 ---
 
 Recently we got a chance to implement AWS Code Pipeline for a project. It has four stages: CodeCommit, CodeBuild, CodeDeploy, and Test using Jenkins. There was a requirement to enable notifications for each state of the stages. So we have created a SNS Topic and added subscriptions so that we can use this Topic in the AWS services to send the notification.
-
+<!--more-->
 Enabling notifications in CodeCommit and CodeDeploy are pretty straight forward. In CodeCommit you can create a Trigger with Event "Push to existing branch" and add target as our SNS topic. Same with CodeDeploy, we can Create Trigger from Deployment Group with events (DeploymentStart, DeploymentSuccess, DeploymentFailure, DeploymentStop, DeploymentReady, DeploymentRollback) and target as our SNS Topic.  
 
 But the problem with CodeCuild is, we don't have a built-in trigger for the CodeBuild state change. So we have to use CloudWatch events to trigger the notifications, where we have created Rule with event pattern and target as SNS topic in CloudWatch. In the Rule creation page we have to select "Event Pattern" and "Build event pattern to match events by service", where we will select CodeBuild as "Service Name" and "All Events" for "Event Type". This will generate an event pattern for CodeBuild status (IN_PROGRESS, SUCCEDED, FAILED, STOPPED).

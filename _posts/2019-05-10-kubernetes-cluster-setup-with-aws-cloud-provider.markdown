@@ -2,6 +2,7 @@
 layout: post
 title: Kubernetes Cluster Setup with AWS Cloud Provider 
 categories: Kubernetes Cluster Setup with AWS Cloud Provider to deploy an application with container image stored in an ECR repository. 
+tags: Kubernetes Cluster Setup with AWS Cloud Provider to deploy an application with container image stored in an ECR repository. 
 description: Kubernetes Cluster Setup with AWS Cloud Provider to deploy an application with container image stored in an ECR repository.
 ---
 
@@ -10,7 +11,7 @@ description: Kubernetes Cluster Setup with AWS Cloud Provider to deploy an appli
 In my [previous blog post]({% post_url 2019-04-14-kubernetes-cluster-setup-on-aws-ec2 %}), I have shown you how to setup a Kubernetes cluster on AWS EC2 instances. I tried deploying a sample application with a public docker image from DockerHub and it is working fine. But when I tried to deploy an application with an image from the AWS ECR, we started getting permission errors. Even though I have given all the necessary permissions for the instance profile role, the pod couldn’t fetch the image from ECR and showing ImagePullBackOff error.
 
 Then we found this [documentation](https://kubernetes.io/docs/concepts/containers/images/#using-aws-ec2-container-registry) from Kubernetes where they are saying “Verify kubelet is running with --cloud-provider=aws” to make it work.   
-
+<!--more-->
 ### AWS Cloud Provider: 
 
 Kubernetes Cloud Providers provide a method of provisioning cloud resources through Kubernetes via the --cloud-provider option. In AWS, this flag allows the provisioning of EBS volumes and cloud load balancers. 

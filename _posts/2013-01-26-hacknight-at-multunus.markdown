@@ -2,6 +2,7 @@
 layout: post
 title: Hacknight @ Multunus
 categories: hacknight multunus fun develop product
+tags: hacknight multunus fun develop product
 description: We had a hacknight at multunus. It was very fun and enjoyed a lot creating a small application
 ---
 
@@ -10,7 +11,7 @@ We had a very successful hacknight here at
 our 5th or 6th hacknight. And why it is very successful because we
 could complete all the 3 applications which we planned to do. Last
 time our team couldn't finish the app completely.
-
+<!--more-->
 We started by 10:30 PM, and there were 8 participants. We came up with
 ideas and selected 3 out of them, 2 team with 3 members and one team
 with 2 members. The ideas were:

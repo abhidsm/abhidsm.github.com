@@ -2,6 +2,7 @@
 layout: post
 title: Blackberry app using phonegap and jquery mobile
 categories: blackberry phonegap issues html5 webworks
+tags: blackberry phonegap issues html5 webworks
 description: Blackberry app using phonegap and jquery mobile. Issues I faced while developing blackberry app using phonegap and jquery mobile.
 ---
 
@@ -12,7 +13,7 @@ phonegap and jquery mobile, and it worked well in Android mobile. Then I
 moved on to Blackberry. In Blackberry it took sometime to setup the
 environment and run the application. Here I am going to explain the
 issues I faced and the steps I taken to fix the issues.
-
+<!--more-->
 1. #Setting up environment
 
       We were using eclipse for developing Android application. So I thought

@@ -2,13 +2,14 @@
 layout: post
 title: Vapor 4 migration issues and fixes
 categories: Vapor 4 migration issues and fixes Swift Vapor4  
-description: The issues we have faced and fixes made while migrating Vapor 3 application to Vapor 4. This includes the 
+tags: Vapor 4 migration issues and fixes Swift Vapor4  
+description: The issues we have faced and fixes made while migrating Vapor 3 application to Vapor 4. This includes the issues like packages product name not matching, routes and session changes, authentication changes, Xcode degug not working, Dockerfile changes, fluent 4 join new format, id attribute is mandatory, etc.
 ---
 
 ### Introduction
 
 I was working on a software product with backend server implemented using Swift and Vapor. We were using Vapor 3 and wanted to migrate it to Vapor 4, since Vapor 4 released on Apr 2020. We followed the [upgrading link](https://docs.vapor.codes/4.0/upgrading/) from Vapor docs to start the upgrading process. In this blog post I will give some additional information about the issues we had faced while upgrading to Vapor 4.
-
+<!--more-->
 ### Package.swift
 
 We have to put the latest version of packages which has Vapor 4 support in the dependency section. Some of the packages we were using didn't have Vapor 4 support in their latest version, so we had to look for any pull requests or forked versions with Vapor 4 support.

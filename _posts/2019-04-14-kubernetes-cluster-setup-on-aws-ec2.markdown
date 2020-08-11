@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Kubernetes cluster setup on AWS EC2
-categories: Kubernetes cluster setup AWS EC2 cloud native microservices container management platform docker.    
+categories: Kubernetes cluster setup AWS EC2 cloud native microservices container management platform docker.  
+tags: Kubernetes cluster setup AWS EC2 cloud native microservices container management platform docker.    
 description: Setting up Kubernetes cluster on AWS EC2 from scratch. After launching an EC2 in AWS, I am going to show how we can setup the Kubernetes cluster on AWS EC2.  
 ---
 
 ### Intro
 
 This is a blog post about the steps I have followed to setup a Kubernetes cluster from scratch by launching new Ubuntu 18.04 AWS EC2 instances, one for master and another for worker node. In this setup the Kubernetes cluster is using Flannel CNI plugin to implement the network for communication. 
-
+<!--more-->
 ### Security Groups
 
 The components of a Kubernetes cluster communicates through different ports and protocols, for example Kubernetes API server, etcd server, Kubelet APi, flannel CNI, etc uses different ports(6443, 10250,..) and protocols(TCP, UDP). So we should enable these ports and protocols in the security group while launching the EC2 instances. The detailed list of ports and protocols required for the master node and worker node are shown in the following pages:

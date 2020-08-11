@@ -2,6 +2,7 @@
 layout: post
 title: WhoIsNext
 categories: whoisnext android application for keep in touch with friends or relatives 
+tags: whoisnext android application for keep in touch with friends or relatives 
 description: whoisnext android application for keep in touch with friends or relatives
 ---
 
@@ -13,7 +14,7 @@ I haven't contacted in the recent past and when I contacted them. And
 I searched in the Android market for an app which helps me to keep in
 touch with my friends. But I couldn't find a simple one. So I created
 one [WhoIsNext](http://market.android.com/details?id=com.abhidsm.whoisnext).
-
+<!--more-->
 User can add contacts to this app and the app will sort the contacts
 based on the LAST_TIME_CONTACTED. So the app will show the contacts
 which are recently contacted on bottom, and contacts which the user
