@@ -1,6 +1,6 @@
 exclude: ['Rakefile', 'README.markdown', 'Gemfile', 'Gemfile.lock']
 growl: true
-plugins: ['jekyll-paginate']
+plugins: ['jekyll-paginate', 'jemoji']
 paginate: 5
 permalink: pretty
 highlighter: rouge
